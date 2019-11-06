@@ -422,23 +422,23 @@ Using domain-specific data sets (as articles from tech news media), we can obtai
                   <li>
                     <div>
 
-                      <h2>Ultra-Fast WiFi</h2>
-                      Faster LTE with the best worldwide roaming.
+                      <h2>LDA and t-SNE similarly grouped our documents</h2>
+Articles with the same colour are placed close to each other by t-SNE
                     </div>
                   </li>
                   <li>
                     <div>
 
-                      <h2>All day battery life</h2>
-                      Your battery worries may be over.
+                      <h2>Our methods are apt to provide clusters of articles with different levels of granularity</h2>
+E.g. LDA returned a broad category of articles dealing with social media crisis. T-SNE helps us to classify these articles into smaller clusters: articles on Twitter, FB, or on president Trump’s usage of social media
                     </div>
                   </li>
                   <li>
                     <div>
-                    
-                      <h2>Lifetime Warranty </h2>
-                      We'll fix it or if we can't, we'll replace it.
-                    </div>
+
+                      <h2>Distance between clusters is meaningful </h2>
+                    Articles on social and ethical issues are closer to each other. Articles on AI in self-driving cars are placed near business news on ride-sharing apps
+                  </div>
                   </li>
                 </ul>
               </div>
@@ -448,6 +448,72 @@ Using domain-specific data sets (as articles from tech news media), we can obtai
               </figure>
             </div>
             <!-- .end card-50 -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <div class="wrap">
+            <h3><strong>AI & Robots</strong></h3>
+<hr>
+            <div class="embed">
+              <iframe src="https://testsite.delabapps.eu/src/scatter_ai.html" width="100%"></iframe>
+              </div>
+          </div>
+        </section>
+        <section>
+          <div class="wrap size-60 zoomIn aligncenter">
+        <h3>
+        <strong>Word2vec</strong>
+        </h3>
+            <hr>
+            <div class="embed">
+              <img src="https://i.imgur.com/CHnYw13.png" alt="w2v" width="50%"></img>
+              <img src="https://i.imgur.com/IFbOLdM.png" alt="w2v" width="50%"></img>
+              </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="wrap">
+            <!-- [class*="content-"] = container max-width:50% = 600px -->
+            <div class="content-center">
+              <h3> Conclusions </h3>
+              <ul class="flexblock specs">
+                <li>
+                  <div>
+                    <h2>
+                      Our study presented a methodology for mapping the topics discussed in technology news
+                    </h2>
+                    We discovered key areas of emerging technologies and social issues, and mapped the relationships between them
+
+        </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+ We provided a bird’s eye view on the technology world with topic modelling
+                    </h2>
+                    Topic modelling serves as an appropriate basis for exploring broad topics (e.g. social media crisis, AI or business news) and grouping articles for further analysis
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+We investigated the subtopics within key areas crucial for the Next Generation Internet initiative: AI, Policy, Business, Cybersecurity and Media
+                    </h2>
+In order to explore more nuanced areas within the broad topics, we not only implemented topic modelling, but also clustered articles using t-SNE. Using this joint technique, we prepared a series of maps presenting articles from chosen categories                  </div>
+                </li>
+                <li>
+                <div>
+                  <h2>
+We experimented with deep-learning methods (Word2vec)
+                  </h2>
+The Word2vec algorithm trained on our corpus brings promising results in comparison to the baseline solution, i.e. algorithm trained on the Google News data set
+              </li>
+              </ul>
+            </div>
+            <!-- end .content-center -->
           </div>
           <!-- .end .wrap -->
         </section>
