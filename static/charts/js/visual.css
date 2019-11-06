@@ -1,0 +1,170 @@
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f7f9fb;
+}
+
+.visual {
+	margin: 10px;
+	overflow: hidden;
+}
+.visual, #VisualJSTooltip {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	background-color: #f7f9fb;
+}
+.visual h1 {
+	font-size: 13px;
+	margin-top: 0;
+	margin-bottom: 0.67em;
+}
+.visual p {
+    font-size: 11px;
+    margin: 10px 0 0 0;
+}
+
+.VisualJSfooter p {
+	font-size: 11px;
+	margin-top: 10px;
+}
+
+.VisualJSfooter p+p{
+	font-size: 11px;
+	margin: 5px 0;
+}
+
+#VisualJSleft, #VisualJSright {
+	text-align: center;
+}
+
+#VisualJSTooltip {
+	display: none;
+	position: absolute;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow:0 0 8px rgba(0,0,0,.2);
+	padding: 4px;
+	background-color: #f7f9fb;
+	opacity: 0.90;
+	white-space: nowrap;
+	font-size: 11px;
+}
+#VisualJSTooltip strong, #VisualJSTooltip em {
+	display: block;
+	font-weight: bold;
+}
+#VisualJSTooltip em {
+	font-style: normal;
+	margin-top: 4px;
+}
+
+#VisualJSTooltip div{
+	margin-bottom: 4px;
+}
+
+.VisualJSlegend button{
+  background: none!important;
+  color: inherit;
+  border: none;
+  padding: 0!important;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit!important;
+}
+
+.visual .VisualJSnw {
+	white-space: nowrap;
+}
+
+/* Flot */
+.visual .VisualJSmini .flot-tick-label {
+	font-size: 8px;
+}
+/*v.1.1.0*/
+.visual .VisualJSbar .flot-tick-label.tickLabel span {
+	display: block;
+	padding: 0 2.5em; /* Avoid x-axis label overlapping in bar charts using styles (since 0.9.6) */
+}
+/*v.1.1.0*/
+.visual .VisualJStsline .flot-tick-label.tickLabel,
+.visual .VisualJStsbar .flot-tick-label.tickLabel {
+	white-space: nowrap;
+}
+
+/* SVG */
+.visual .VisualJSarea {
+	fill: #808080;
+	stroke: #000;
+	stroke-width: .05px;
+	stroke-linejoin: round;
+	vector-effect: non-scaling-stroke;
+}
+.visual .VisualJSarea path:hover,
+.visual .VisualJSarea path:focus {
+	stroke-width: 1px;
+	outline: 0;
+}
+.visual .VisualJSarea path:focus {
+	stroke: #fff;
+}
+.visual .VisualJSarea path:hover {
+	stroke: #ffa500;
+}
+
+.visual .VisualJSarea path.cnohover {
+	fill: #666;
+}
+.visual .VisualJSarea path.cnohover:hover,
+.visual .VisualJSarea path.cnohover:focus {
+	stroke: #000;
+	stroke-width: .05px;
+}
+.visual svg g.VisualJSlegend {
+	stroke: #808080;
+	stroke-width: 1px;
+}
+
+.visual svg g.VisualJSlegend line,
+.visual svg g.VisualJSlegend rect {
+	stroke: #000;
+	stroke-width: 0.5px;
+}
+.visual svg g.VisualJSlegend text {
+	font-size: 11px;
+	fill: #000;
+	stroke: none;
+}
+
+.visual .VisualJSlegend {
+	border: 1px solid #ccc;
+	max-width: 25%;
+}
+
+.visual .VisualJSlegend table {
+	opacity: 0.85;
+	background-color: #fff;
+	font-size: smaller;
+	padding: 4px;
+	border: none;
+}
+
+.visual .VisualJSlegend table .legendColorBox {
+	vertical-align: top;
+}
+
+@media (max-width: 600px) {
+	.visual h1 {
+		font-size: 12px;
+	}
+	.visual p {
+		font-size: 10px;
+	}
+
+	.visual .VisualJSlegend {
+		max-width: 150px;
+	}
+}
