@@ -267,12 +267,10 @@ Topics contain characteristic vocabularies
                 <li>
                   <div>
                     <h2>
-                      <svg class="fa-text-height">
-                        <use xlink:href="#fa-text-height"></use>
-                      </svg>
-                      Vertical rhythm
+ We have used LDA in a two-stage process
                     </h2>
-                    Use multiples of 8.
+1. The entire sample of articles is divided into wide categories, e.g. business or AI based on the dominant topic </br>
+2. LDA is applied again for articles in the individual categories, to explore latent topics within them
                   </div>
                 </li>
               </ul>
@@ -281,6 +279,59 @@ Topics contain characteristic vocabularies
           </div>
           <!-- .end .wrap -->
         </section>
+
+        <section>
+          <div class="wrap">
+            <!-- [class*="content-"] = container max-width:50% = 600px -->
+            <div class="content-center">
+              <h3>Clustering</h3>
+              <ul class="flexblock specs">
+                <li>
+                  <div>
+                    <h2>
+Our data is high-dimensional (770k unique terms)
+                    </h2>
+We need to discover its hidden, lower-dimensional structure
+      </div>
+                </li>
+                <li>
+                  <div>
+                    <h2>
+We have applied a combination of SVD, PCA and t-SNE for dimensionality reduction
+                    </h2>
+</div>
+</li>
+
+<li>
+  <div>
+    <h2>
+It works nicely with preserving local structure    </h2>
+I.e. observations close to each other in the input high-dimensional space are also close to each other in the output low-dimensional space
+
+</div>
+</li>
+
+<li>
+  <div>
+    <h2>
+It maintains the global structure of data: the distance between topic clouds is meaningful
+    </h2>
+    E.g. the cloud with articles on bitcoin are close to the cloud collecting documents on ether, and further from articles on AI
+
+</div>
+</li>
+                  </div>
+                </li>
+
+
+
+              </ul>
+            </div>
+            <!-- end .content-center -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
 
       </article>
     </main>
